@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+ <hibernate-mapping>
+  <class name="cn.edu.zucc.TPF.Bean.AlarmDealBean"  table="tbl_alarmdeal">
+      <id name="id" column="id" type="java.lang.Integer" unsaved-value="null">
+        <generator class="increment"></generator>
+      </id>     
+      <property name="liftid" column="liftid" type="java.lang.String"/>
+      <property name="senderid" column="senderid" type="java.lang.String"/>
+      <property name="warninglevel" column="warninglevel" type="java.lang.Integer"/>
+      <property name="accx" column="accx" type="java.lang.Float"/>
+      <property name="accy" column="accy" type="java.lang.Float"/>
+      <property name="accz" column="accz" type="java.lang.Float"/>
+      <property name="address" column="address" type="java.lang.String"/>
+      <property name="liftlatitude" column="liftlatitude" type="java.lang.Float"/>
+      <property name="liftlongitude" column="liftlongitude" type="java.lang.Float"/>
+      <property name="distence" column="distence" type="java.lang.Float"/>
+      <property name="unusualtime" column="unusualtime" type="java.sql.Timestamp"/>
+      <property name="recordtime" column="recordtime" type="java.sql.Timestamp"/>
+      <property name="dealtag" column="dealtag" type="java.lang.Integer"/>
+  </class>  
+</hibernate-mapping>

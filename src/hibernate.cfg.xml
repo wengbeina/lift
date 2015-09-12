@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+      <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+      <property name="connection.url">
+            jdbc:mysql://127.0.0.1/liftdata
+            </property>
+      <property name="connection.username">root</property>
+      <property name="connection.password">root</property>
+      <property name="connection.pool_size">50</property>
+      <property name="dialect">org.hibernate.dialect.SQLServerDialect</property>
+      <property name="current_session_context_class">thread</property>
+      <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+      <property name="hibernate.jdbc.batch_size">50</property> 
+      <property name="hiberante.cache.use_second_level_cache">false</property> 
+      <property name="show_sql">true</property> 
+      <mapping resource="cn/edu/zucc/TPF/Bean/LiftData.hbm.xml"></mapping>
+      <mapping resource="cn/edu/zucc/TPF/Bean/Lift.hbm.xml"></mapping>
+      <mapping resource="cn/edu/zucc/TPF/Bean/LiftUnusual.hbm.xml"></mapping>
+      <mapping resource="cn/edu/zucc/TPF/Bean/Log.hbm.xml"></mapping>
+      <mapping resource="cn/edu/zucc/TPF/Bean/User.hbm.xml"></mapping>
+      <mapping resource="cn/edu/zucc/TPF/Bean/GpsData.hbm.xml"></mapping>
+      <mapping resource="cn/edu/zucc/TPF/Bean/AlarmDeal.hbm.xml"></mapping>
+  </session-factory>
+</hibernate-configuration>

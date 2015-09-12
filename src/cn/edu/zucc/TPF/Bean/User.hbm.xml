@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+ <hibernate-mapping>
+  <class name="cn.edu.zucc.TPF.Bean.UserBean"  table="tbl_user">
+      <id name="userid" column="userid" type="java.lang.String" unsaved-value="null">
+        <generator class="assigned"></generator>
+      </id>     
+      <property name="userpwd" column="userpwd" type="java.lang.String"></property>
+      <property name="username" column="username" type="java.lang.String"></property>
+      <property name="gender" column="gender" type="java.lang.String"></property>
+      <property name="cellphone" column="cellphone" type="java.lang.String"></property>
+      <property name="usertype" column="usertype" type="java.lang.Integer"></property>
+      <property name="email" column="email" type="java.lang.String"></property>
+      <property name="isregistered" column="isregistered" type="java.lang.Integer"></property>      
+  </class>  
+</hibernate-mapping>

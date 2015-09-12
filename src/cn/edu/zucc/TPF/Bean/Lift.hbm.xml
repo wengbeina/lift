@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+ <hibernate-mapping>
+  <class name="cn.edu.zucc.TPF.Bean.LiftBean"  table="tbl_lift">
+      <id name="liftid" column="liftid" type="java.lang.String" unsaved-value="null">
+        <generator class="assigned"></generator>
+      </id>     
+      <property name="pwd" column="pwd" type="java.lang.String"></property>
+      <property name="liftname" column="liftname" type="java.lang.String"></property>
+      <property name="accxLimit" column="accxLimit" type="java.lang.Float"/>
+      <property name="accyLimit" column="accyLimit" type="java.lang.Float"/>
+      <property name="acczLimit" column="acczLimit" type="java.lang.Float"/>
+      <property name="latitude" column="latitude" type="java.lang.Float"/>
+      <property name="longitude" column="longitude" type="java.lang.Float"/>
+      <property name="address" column="address" type="java.lang.String"/>
+      
+  </class>  
+</hibernate-mapping>

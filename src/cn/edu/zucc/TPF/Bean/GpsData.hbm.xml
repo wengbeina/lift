@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+ <hibernate-mapping>
+  <class name="cn.edu.zucc.TPF.Bean.GpsDataBean"  table="tbl_gpsdata">
+      <id name="id" column="id" type="java.lang.Integer" unsaved-value="null">
+        <generator class="increment"></generator>
+      </id>     
+      <property name="userid" column="userid" type="java.lang.String"/>
+      <property name="latitude" column="latitude" type="java.lang.Float"/>
+      <property name="longitude" column="longitude" type="java.lang.Float"/>
+      <property name="clientip" column="clientip" type="java.lang.String"/>
+      <property name="recordtime" column="recordtime" type="java.sql.Timestamp"/>
+      
+  </class>  
+</hibernate-mapping>
